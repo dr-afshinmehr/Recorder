@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>پروژه پژوهشی ثبت گفتار</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/raphael-min.js"></script>
+    <script src="js/livicons.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/action.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+    <!--    Header Section-->
+    <div class="row">
+        <div class="header_video">
+            <video autoplay muted loop id="myVideo" src="videos/UHD%204K.mp4" type="video/mp4"></video>
+            <h1 class="header_text">پروژه پژوهشی ثبت گفتار</h1>
+            <a href="#row1" class="scroll_position"><img class="rounded-circle bg-black bg-opacity-50 scroll_img" src="img/scroll-down.gif"></a>
+        </div>
+        <div class="content">
+            <!-- Use a button to pause/play the video with JavaScript -->
+
+            <button id="myBtn" onclick="myPlayFunction()">Pause</button>
+            <p class="header_description">به پروژه ثبت گفتار برای تشخیص گفتار افراد مبتلا به اختلال در گفتار خوش آمدید!</p>
+            <a href="#row1"><span class="livicon" data-n="angle-double-down" data-color="red" data-onparent="true"><p style="font-weight: bolder" class="header_description">لطفا صفحه را به پایین بکشید.</p></span></a>
+
+        </div>
+    </div>
+</div>
+<!--    Nav Section-->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link active" href="index.html">  صفحه اصلی</a></li>
+                <li class="nav-item"><a class="nav-link" href="login.php">ورود</a></li>
+                <li class="nav-item"><a class="nav-link" href="register.php">ثبت نام</a></li>
+                <li class="nav-item"><a class="nav-link" href="literature.html">برای پژوهشگران</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">درباره این پروژه</a></li>
+            </ul>
+        </div>
+        <a class="navbar-brand bg-light rounded-circle" href="#">
+            <img src="img/AIA%20WATER%20MARK%20(ORIGINAL%20SIZE).png" alt="Avatar Logo" style="width:40px;" class="rounded-pill">
+        </a>
+    </div>
+</nav>
+<!--    Main Content Block-->
+<div class="container-fluid">
+    <div class="row main_content" id="row1">
+        <div class="col-6 col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 RightThumbnail">
+            <img data-aos="fade-down-left" src="img/01.jpg" class="content_thumbnail" alt="انزوا در خانواده">
+        </div>
+        <div class="col-6 col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 LeftTextBlock">
+            <div data-aos="fade-right" class="TextContentBlock">
+                <h2><span class="livicon" data-n="user-ban" data-size="48" data-onparent="true"></span>  انزوا در خانواده</h2>
+                <hr>
+                <p><span class="livicon" data-n="quote-right" data-color="red" data-onparent="true"></span>  افراد دارای اختلال در گفتار حتی در خانواده خود منزوی خواهند شد.  <span class="livicon" data-n="quote-left" data-color="red" data-onparent="true"></span></p>
+                <hr>
+            </div>
+        </div>
+    </div>
+
+    <div class="row main_content" id="row2">
+        <div class="col-6 col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 RightTextBlock">
+            <div data-aos="fade-left" class="TextContentBlock">
+                <h2><span class="livicon" data-n="users" data-size="44" data-onparent="true"></span>  ارتباط با جهان</h2>
+                <hr>
+                <p><span class="livicon" data-n="quote-right" data-color="red" data-onparent="true"></span>  مکالمه برای همه مردم یک اتفاق روزمره است.</p>
+                <p>اما، می‌تواند چالشی بزرگ برای افراد مبتلا به گفتار غیر معمول باشد.  <span class="livicon" data-n="quote-left" data-color="red" data-onparent="true"></span></p>
+                <hr>
+            </div>
+        </div>
+        <div class="col-6 col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 LeftThumbnail">
+            <img data-aos="fade-down-right" src="img/02.png" class="content_thumbnail" alt="ارتباط با جهان">
+        </div>
+    </div>
+
+    <div class="row main_content" id="row3">
+        <div class="col-6 col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 RightThumbnail">
+            <img data-aos="fade-down-left" src="img/03.jpg" class="content_thumbnail" alt="هدف این پروژه چیست؟">
+        </div>
+        <div class="col-6 col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 LeftTextBlock2">
+            <div data-aos="fade-right" class="TextContentBlock">
+                <h2><span class="livicon" data-n="pen" data-size="48" data-onparent="true"></span>  هدف این پروژه چیست؟</h2>
+                <hr>
+                <p><span class="livicon" data-n="quote-right" data-color="red" data-onparent="true"></span>  این پروژه تحقیقاتی در چهارچوب رساله دکتری اجرا می‌گردد.</p>
+                <p>هدف از این پروژه ایجاد بستری برای تشخیص گفتار افراد دارای اختلال در گفتار (دیس‌آرتری) به کمک فناوری هوش مصنوعی است.  <span class="livicon" data-n="quote-left" data-color="red" data-onparent="true"></span></p>
+                <hr>
+            </div>
+        </div>
+    </div>
+
+    <div class="row main_content" id="row4">
+        <div class="row">
+            <div class="col col-4 col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12"></div>
+            <div class="col col-4 col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12" style="text-align: center">
+                <h2><span class="livicon" data-n="map" data-size="48"  data-onparent="true"></span>   چگونگی عملکرد پروژه</h2>
+            </div>
+            <div class="col col-4 col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12"></div>
+        </div>
+        <div data-aos="zoom-in-up" class="row" style="margin-top: 100px">
+            <div class="col col-4 col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 boxes">
+                <span class="livicon" data-n="microphone" data-size="68" data-color="white" data-onparent="true"></span>
+                <hr>
+                <h2>ثبت گفتار</h2>
+                <br>
+                <p>داوطلبان عبارات کاربردی و ساده‌ای را ثبت می‌کنند.</p>
+            </div>
+            <div class="col col-4 col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 boxes">
+                <span class="livicon" data-n="barchart" data-size="68" data-color="white" data-onparent="true"></span>
+                <hr>
+                <h2>تصحیح الگوریتم‌ها</h2>
+                <br>
+                <p>دانشمندان و پژوهشگران این داده‌های صوتی را تجزیه و تحلیل می‌کنند و از آن برای اصلاح نرم‌افزار تشخیص گفتار استفا  ده می‌کنند تا بتواند به‌طور مؤثری تا حد امکان صداها را درک کند.</p>
+            </div>
+            <div class="col col-4 col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 boxes">
+                <span class="livicon" data-n="checked-on" data-size="68" data-color="white" data-onparent="true"></span>
+                <hr>
+                <h2>خروجی پروژه</h2>
+                <br>
+                <p>این تحقیق در برنامه‌ها و طرح‌هایی ادغام خواهد شد که به درک گفتار افرادی با گفتار غیر استاندارد کمک می‌کند.</p>
+            </div>
+        </div>
+    </div>
+    <!--    FAQ Section-->
+    <div class="row main_content">
+        <div data-aos="zoom-in" style="text-align: center; margin-bottom: 85px">
+            <h2><span class="livicon" data-n="spinner-seven" data-size="48" data-onparent="true"></span>  سوالات متداول قبل از اینکه شروع کنید</h2>
+        </div>
+        <details data-aos="zoom-in-down" id="drawer1" class="drawer">
+            <summary class="drawer_summary">
+                <div class="drawer_summary_content">
+                    <h4 class="drawer_summary_header" onclick="show_faq_desc1()"><span class="livicon" data-n="angle-wide-down" data-hc="white" data-onparent="true"></span>  آیا من واجد شرایط شرکت در این پروژه هستم؟</h4>
+                </div>
+            </summary>
+        </details>
+        <div class="drawer_desc" id="FAQ_Desc1" hidden>
+            <p>شرایط زیر برای شرکت در این طرح تحقیقاتی ضروری است:</p>
+            <ul>
+                <li>دارای مشکلات گفتار و اختلال گفتار باشید.</li>
+                <li>شما به یک دستگاه تلفن همراه یا کامپیوتر دسکتاپ یا لپتاپ (اندروید یا iOS یا ویندوز) دارای میکروفون دسترسی دارید.</li>
+                <li>زبان فارسی بعنوان زبان مادری شما محسوب می‌شود و یا می‌توانید به این زبان سخن بگویید و متون را بخوانید.</li>
+                <li>شما رضایت کامل برای شرکت در این طرح تحقیقاتی را دارید.</li>
+            </ul>
+        </div>
+        <details data-aos="zoom-in-down" id="drawer2" class="drawer">
+            <summary class="drawer_summary">
+                <div class="drawer_summary_content">
+                    <h4 class="drawer_summary_header" onclick="show_faq_desc2()"><span class="livicon" data-n="angle-wide-down" data-hc="white" data-onparent="true"></span>  من به عنوان یک شرکت کننده چه خواهم کرد؟</h4>
+                </div>
+            </summary>
+        </details>
+        <div class="drawer_desc" id="FAQ_Desc2" hidden>
+            <p>پس از ثبت نام در این طرح تحقیقاتی بعنوان داوطلب با استفاده از ابزار ضبط آنلاین ارائه شده در این وبگاه، عبارات نمایش داده شده بر روی صفحه را با صدای بلند خواهید خواند. سپس این ضبط‌ها توسط پژوهشگر هوش مصنوعی (رضا افشین مهر) مورد بررسی قرار می‌گیرند و برای آموزش نرم‌افزار هوش مصنوعی تشخیص گفتار استفاده می‌شوند.</p>
+        </div>
+        <details data-aos="zoom-in-down" id="drawer3" class="drawer">
+            <summary class="drawer_summary">
+                <div class="drawer_summary_content">
+                    <h4 class="drawer_summary_header" onclick="show_faq_desc3()"><span class="livicon" data-n="angle-wide-down" data-hc="white" data-onparent="true"></span>  برای شروع به چه چیزی نیاز دارم؟</h4>
+                </div>
+            </summary>
+        </details>
+        <div class="drawer_desc" id="FAQ_Desc3" hidden>
+            <p>باید به تلفن، تبلت، لپ‌تاپ یا رایانه رومیزی با میکروفون دسترسی داشته باشید. مهم نیست که میکروفون داخلی باشد یا میکروفن حرفه‌ای خارجی باشد. برای شروع، کافیست ثبت نام کنید سپس روی دکمه قرمز رنگ «ضبط عبارات» کلیک کنید و پس از خواندن هر عبارت نمایش داده شده با صدای بلند و رسا (ترجیحا در محیط بدون سروصدا) برای توقف عملیات ضبط آن عبارت و رفتن به عبارت بعذی مجددا دکمه قرمز (توقف ضبط) را بفشارید(این فرآیند تا آخرین عبارت تکرار می‌شود).</p>
+        </div>
+        <details data-aos="zoom-in-down" id="drawer4" class="drawer">
+            <summary class="drawer_summary">
+                <div class="drawer_summary_content">
+                    <h4 class="drawer_summary_header" onclick="show_faq_desc4()"><span class="livicon" data-n="angle-wide-down" data-hc="white" data-onparent="true"></span>  مشکل و محدودیت دارم چه کار کنم؟</h4>
+                </div>
+            </summary>
+        </details>
+        <div class="drawer_desc" id="FAQ_Desc4" hidden>
+            <p>اگر به هر دلبل نمی‌توانید عملیات ضبط را خودتان انجام دهید، می‌توانید از پرستار یا اعضای خانواده خود بخواهید که در این امر به شما کمک کنند.</p>
+            <p>درصورتی که مشکل شما یک مشکل فنی است و پیغام خطا دریافت می‌کتید، ابتدا اتصال اینترنت خود را بررسی بفرمایید، سپس سایت را با استفاده از یکی از مرورگرهای مطرح مثل مرورگر گوگل کروم باز کنید. درصورتی که مشکل برطرف نشده بود می‌توانید با ما تماس بگیرید.</p>
+        </div>
+        <details data-aos="zoom-in-down" id="drawer5" class="drawer">
+            <summary class="drawer_summary">
+                <div class="drawer_summary_content">
+                    <h4 class="drawer_summary_header" onclick="show_faq_desc5()"><span class="livicon" data-n="angle-wide-down" data-hc="white" data-onparent="true"></span>  شرکت در این طرح تحقیقاتی چه مزایایی برای من دارد؟</h4>
+                </div>
+            </summary>
+        </details>
+        <div class="drawer_desc" id="FAQ_Desc5" hidden>
+            <p>همانطور که پیشتر گفته شد، این پروژه یک طرح تحقیقاتی در قالب رساله دکتری آقای (رضا افشین مهر) دانشجوی مقطع دکتری رشته هوش مصنوعی است. هدف از این رساله تولید علم و دستیابی به راهی برای تشخیص گفتار بیماران دیزآرتری مانند ALS, MS و ... توسط تکنولوژی پردازش گفتار و هوش مصنوعی است که از دستاورد آن علاوه بر ارتقاع دانش جامعه علمی کشور عزیزمان، شما و تمامی بیماران عزیز مثل شما نیز می‌توانند منتفع شوند و ارتباطی آسان در جامعه را تجربه کنند.</p>
+        </div>
+        <details data-aos="zoom-in-down" id="drawer6" class="drawer">
+            <summary class="drawer_summary">
+                <div class="drawer_summary_content">
+                    <h4 class="drawer_summary_header" onclick="show_faq_desc6()"><span class="livicon" data-n="angle-wide-down" data-hc="white" data-onparent="true"></span>  چه زمانی به این فناوری دسترسی خواهم داشت که صدای من را بهتر درک کند؟</h4>
+                </div>
+            </summary>
+        </details>
+        <div class="drawer_desc" id="FAQ_Desc6" hidden>
+            <p>این پروژه تحقیقاتی هنوز در ابتدای راه و در حد یک نظریه است و همانطور که می‌دانید، در هر پروژه تحقیقاتی در تمام دنیا نیاز به تحقیق و بررسی پژوهشگران و همینطور آزمایش‌های فراوان است تا پژوهشگران بتوانند فرضیه خود را به اثبات برسانند و در اصطلاح تولید علم کنند، که این پروژه تحقیقاتی نیز از این قاعده مستثنا نیست. پس از طی مراحل تحقیقاتی خروجی پروژه برای استفاده آزمایشی در اختیار شرکت کنندگان قرار خواهد گرفت.</p>
+        </div>
+        <details data-aos="zoom-in-down" id="drawer7" class="drawer">
+            <summary class="drawer_summary">
+                <div class="drawer_summary_content">
+                    <h4 class="drawer_summary_header" onclick="show_faq_desc7()"><span class="livicon" data-n="angle-wide-down" data-hc="white" data-onparent="true"></span>  آیا اطلاعات من محفوظ می ماند؟</h4>
+                </div>
+            </summary>
+        </details>
+        <div class="drawer_desc" id="FAQ_Desc7" hidden>
+            <p>شما بصورت کاملا ناشناس در این طرح شرکت خواهید کرد و تنها یک کد کاربری و رمز عبور به شما تعلق می‌گیرد، تنها راه ارتباطی ما با شما از طریق پست الکترونیکی (ایمیل) است که در فرم ثبت نام وارد می‌کنید. این ایمیل و اطلاعات وارد شده در فرم صرفا برای به کار گیری در فرآیند پژوهش است و هیچکس به آن دسترسی ندارد.</p>
+        </div>
+    </div>
+    <div class="row main_content">
+        <a type="button" href="register.php" class="btn btn-info" style="padding: 30px 0; color: white; font-weight: bold"><span class="livicon" data-n="edit" data-color="white" data-onparent="true"></span>  ثبت نام در پروژه</a>
+        <br><br>
+        <hr>
+        <a type="button" href="login.php" class="btn btn-success" style="padding: 30px 0; color: white; font-weight: bold"><span class="livicon" data-n="sign-in" data-color="white" data-onparent="true"></span>  ورود و ضبط گفتار</a>
+    </div>
+    <!--    Footer Block-->
+    <div class="row footer_content">
+        <section class="copyright">
+            <p><span class="livicon" data-n="info" data-size="18" data-color="blue" data-onparent="true"></span>  طراحی و اجرا: <span style="color: red; font-weight: bold">رضا افشین مهر</span></p>
+        </section>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<!--Script of Background Video-->
+<script>
+    // Get the video
+    var video = document.getElementById("myVideo");
+
+
+    // Get the button
+    var btn = document.getElementById("myBtn");
+</script>
+
+<!--Script Block for Animation Scroll-->
+<script src="js/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+
+</body>
+</html>

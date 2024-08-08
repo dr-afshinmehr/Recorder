@@ -1,0 +1,397 @@
+@font-face {
+    font-family: "B Lotus";
+}
+@font-face {
+    font-family: "B Titr";
+}
+@font-face {
+    font-family: "B Mitra";
+}
+body{
+    font-family: "B Lotus", serif;
+    font-size: 16pt;
+    background-color: #e6e6e6 !important;
+    direction: rtl;
+}
+h1, h2,h3, h4, h5, h6{
+    font-family: "B Titr", serif;
+}
+.tasks{
+    font-family: "B Mitra", serif !important;
+    font-size: 20pt;
+    align-self: center;
+    text-align: justify;
+    text-justify: inter-word;
+}
+form{
+    padding: 25px 10px 25px 10px !important;
+}
+.header{
+    background-color: #00ff96;
+    padding: 40px !important;
+}
+.logo{
+    height: 100px;
+    width: 210px;
+    float: left;
+    position: sticky;
+    margin-left: 20px;
+}
+.logo2{
+    height: 90px;
+    width: 70px;
+    float: left;
+    position: sticky;
+    margin-left: -20px;
+    margin-top: 15px;
+}
+button{
+    color: #ffffff !important;
+}
+.padding-text{
+    padding-right: calc(var(--bs-gutter-x)* 0.8) !important;
+    padding-top: calc(var(--bs-gutter-x)* 0.9) !important;
+    margin-bottom: 20px;
+}
+.option{
+    padding-top: 25px !important;
+}
+.record-btn{
+    background: #ff0019;
+    position:fixed;
+    bottom: 30px;
+    right: calc(var(--bs-gutter-x)* 1.5);
+    border: #4d5154 1px solid;
+    border-radius: 50% !important;
+    width: 150px !important;
+    height: 150px !important;
+    box-shadow: 1px 2px 10px #4d5154;
+}
+.record-btn:hover{
+    box-shadow: inset 1px 1px 10px #ffffff;
+}
+.record-btn:active{
+    background: #ff0019;
+    box-shadow: inset 1px 1px 10px #4d5154;
+}
+.notebook{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    box-shadow: 1px 2px 10px #4d5154;
+    padding: 115px 140px;
+    border: 1px dotted #0f5132;
+    border-radius: 5px;
+    line-height:3.5em
+}
+.message_box{
+    border: 1px dashed #212529;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    height: fit-content;
+    text-align: center;
+    box-shadow: #2b2f32 1px 1px 1px 1px;
+}
+.attend{
+    font-weight: bold;
+    font-size: 12pt;
+    color: red !important;
+}
+.attend-star{
+    float: right;
+    margin-left: 10px;
+}
+.quote{
+    color: red;
+    font-weight: bold;
+    font-size: 30pt;
+}
+.quote-begin{
+    margin-left: 10px;
+}
+.quote-end{
+    margin-right: 10px;
+}
+button.btn-outline-danger{
+    color: #dc3545 !important;
+}
+button.btn-outline-danger:hover{
+    color: white !important;
+}
+.margin-right{
+    margin-right: 20px;
+}
+.header_video{
+    width: 100%;
+    height: 850px;
+}
+.header_text{
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    border-radius: 5px;
+}
+.scroll_position{
+    position: absolute;
+    left: 47%;
+    top: 65%;
+}
+.scroll_img{
+    width: 120px;
+    height: 120px;
+}
+#myVideo{
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+/* Add some content at the bottom of the video/page */
+.content {
+    position: sticky;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+/* Style the button used to pause/play the video */
+#myBtn {
+    width: 80px;
+    height: 80px;
+    border: none;
+    border-radius: 50%;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    background: #ddd;
+    color: black;
+}
+.main_content{
+    background-color: white;
+    position: sticky;
+    padding: 50px;
+}
+.content_thumbnail{
+    width: 60%;
+    height: auto;
+    display: inline-block;
+    border-radius: 50%;
+    box-shadow: 1px 1px 15px #6c757d;
+}
+.RightThumbnail{
+    display: inline-block;
+    padding: 20% 15% 0 0;
+    text-align: center;
+}
+.LeftThumbnail{
+    display: inline-block;
+    padding: 10% 0 0 15%;
+    text-align: center;
+}
+.RightTextBlock{
+    padding-top: 14%;
+    text-align: justify;
+    padding-right: 8% !important;
+}
+.LeftTextBlock{
+    padding-top: 30%;
+    text-align: justify;
+}.LeftTextBlock2{
+    padding-top: 22%;
+    text-align: justify;
+}
+.TextContentBlock{
+    width: 70%;
+    padding: 15px;
+    border: 2px dashed #cdcccc;
+    border-radius: 10px;
+}
+.header_description{
+    margin-right: 20px;
+    display: inline-block !important;
+}
+.second_nav{
+    --mobile-padding: 28vw;
+    /*position: absolute;*/
+    width: 100%;
+    max-width: min-content;
+    display: inline-block;
+    box-sizing: border-box;
+    white-space: nowrap;
+    list-style: none;
+    padding: 1px 8px 1px 0;
+    border-radius: 55px;
+    background-color: #202124;
+    overflow: auto;
+    transition: background-color .6s ease;
+    outline: 1px solid #3C4043;
+    outline-offset: -1px;
+}
+.navItem{
+    display: inline-block;
+}
+.sticky {
+    position:-webkit-sticky;
+    position:sticky;
+    top:80px;
+    z-index:1020
+}
+.boxes {
+    /* box-shadow: 1px 1px 1px gray; */
+    height: 400px;
+    background-image: linear-gradient(180deg,#202124 26.9%,#20212400 190.46%);
+    /* background-position-x: initial; */
+    /* background-position-y: initial; */
+    /* background-size: initial; */
+    /* background-repeat: initial; */
+    /* background-attachment: initial; */
+    /* background-origin: initial; */
+    /* background-clip: initial; */
+    /* background-color: initial; */
+    text-align: center;
+    padding: 60px 65px !important;
+    box-shadow: inset 10px 10px 10px 20px white;
+    color: white;
+}
+.footer_content{
+    box-shadow: inset 0 50px 20px -20px white;
+    background-color: #212529;
+    position: sticky;
+    height: 250px;
+}
+.footer_contents{
+    box-shadow: inset 0 50px 20px -20px #e6e6e6;
+    background-color: #212529;
+    height: 250px;
+
+}
+.copyright{
+    color: white;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    font-size: 10pt;
+}
+.copyright2{
+    color: white;
+    bottom: 0;
+    text-align: center;
+    font-size: 10pt;
+    margin-top: 195px !important;
+}
+
+.drawer{
+    cursor: pointer;
+    transition: .3s all ease;
+    width: 100%;
+    height: 110px;
+}
+.drawer:hover{
+    background-color: #0dcaf0;
+}
+.drawer_bg{
+    background-color: #0dcaf0;
+    color: white;
+
+}
+.drawer_summary{
+    padding: 36px 36px 36px 0;
+    border-top: 1px solid #0dcaf0;
+    transition: .3s all ease;
+    list-style: none;
+    width: 100%;
+}
+.drawer_summary_content{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: relative;
+}
+.drawer_summary_header:hover{
+    gap: 16px;
+    color: white;
+    cursor: pointer;
+    transition: .3s all ease;
+    padding-right: 30px;
+    /*font-size: 32px;*/
+    line-height: 40px;
+    font-weight: 400;
+}
+.drawer_desc{
+    height: 200px;
+    width: 100% !important;
+    background-color: #0dcaf0;
+    color: white;
+    margin-top: 2px !important;
+    margin-bottom: 2px !important;
+    padding: 30px !important;
+    text-align: justify;
+    transition: .5s all ease;
+}
+.delay{
+    transition: .3s all ease;
+}
+
+
+
+
+@media (max-width: 600px) {
+    .record-btn-sm{
+        background: #ff0019;
+        position: fixed;
+        flex:  0 0 auto;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 100% !important;
+        height: 70px !important;
+        border: #4d5154 1px solid;
+        border-radius: 0 5px 0 5px !important;
+        box-shadow: 1px 2px 10px #4d5154 ;
+    }
+    .notebook-sm{
+        padding: calc(var(--bs-gutter-x)* 0.95) 30px !important;
+        margin-bottom: 25% !important;
+    }
+}
+@media (max-width: 800px) {
+    .logo-sm{
+        height: 70px;
+        width: 100px;
+        float: left;
+        position: sticky;
+        margin-left: 10px;
+    }
+    .logo2-sm {
+        height: 60px;
+        width: 50px;
+        float: left;
+        position: sticky;
+        margin-left: -10px;
+        margin-top: 10px;
+    }
+}
+@media (min-width: 600px) {
+    .record-btn-md{
+        width: 100px !important;
+        height: 100px !important;
+    }
+}@media (min-width: 995px) {
+    .record-btn-lg{
+        width: 150px !important;
+        height: 150px !important;
+    }
+}
