@@ -2,7 +2,7 @@
 function connection()
 {
     $servername = "localhost";
-    $username = "asr";
+    $username = "isamhrhz_asr";
     $password = ".5366REZA0215Asr.";
     $dbname = "isamhrhz_tasks_db";
 
@@ -15,7 +15,7 @@ function connection()
 function connection_user()
 {
     $servername = "localhost";
-    $username = "asr";
+    $username = "isamhrhz_asr";
     $password = ".5366REZA0215Asr.";
     $dbname = "isamhrhz_users";
 
